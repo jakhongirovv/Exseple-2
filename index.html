@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,102 @@
     <link rel="stylesheet" href="./иконка/css/all.min.css">
     <title>Ekzamen-2</title>
 </head>
+
 <body>
 
+    <header class="heaader mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex header_div">
+                    <h2 class="header_h2">BookSpace</h2>
+                    <input type="text" placeholder="Search" class="form-control mt-2 mb-2" oninput="qidir(this.value)">
+                    <button class="header_button me-5 ms-5">
+                        <a class="header_btn-a" href="#">Search</a>
+                    </button>
 
-    
+
+                    <button class=" position-relative h_btune" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+
+                        <img src="./images/korzina.svg" alt="rasim">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                            id="korzna">
+                            0
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Korzina</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body" id="canvas">
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="servicess">
+            <div class="container">
+                <h1 class="ser_h1 mb-3">Bestselling books</h1>
+
+                <div class="row" id="row">
+
+
+                    
+
+                </div>
+
+            </div>
+        </section>
+
+
+        
+
+
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Info</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </main>
+
+
+
 
     <script src="./jQuery.js"></script>
     <script src="./main.js"></script>
     <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
     <script src="./иконка/js/all.min.js"></script>
 </body>
+
 </html>
