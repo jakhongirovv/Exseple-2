@@ -2,7 +2,7 @@ let data;
 let korzinOff = [];
 
 function Keldi() {
-    $.ajax("http://myjson.dit.upm.es/api/bins/d3ow", {
+    $.ajax("https://api.nytimes.com/svc/books/v3/lists/current/childrens-middle-grade.json?api-key=0nG5do2caU59G7F2PT1eRQD0RAsaX5Du", {
         success: (value) => {
             console.log(value.results.books);
             data = value.results.books
